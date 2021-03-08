@@ -7,27 +7,54 @@ nav {
 }
 
 nav ul {
-    margin: 0 10px;}
+    margin: 0;}
 
 nav li {
     display: inline-block;
     font-size: 1.25rem;
-    margin: 0 .1rem;
+    margin: 0 .3rem;
 }
 
 a {
     text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+a:hover{
+    color:#aaaaaa;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3em;
     margin: 1rem;
 }
 
 h2 {
-    margin-top: 2rem;
+    margin: 1.25rem 1rem .75rem 1rem;
+}
+
+p {
+    margin: 0 1rem 1rem 1rem;  
+    font-size: 1.1em;
+      
 }
 img {
     width: 100%;
-    margin: none;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 1rem;
+    border-style: none;
+    padding: 20px;
+    
+}
+
+btn:hover {
+    background-color: aaaaaa;
 }
