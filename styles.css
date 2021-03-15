@@ -1,18 +1,33 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
 * {
     font-family: "Open Sans", sans-serif;
 }
 
-nav {
+/* nav {
     text-align: right;
-}
+} */
 
 nav ul {
-    margin: 0;}
+    margin: 1rem;
+    padding: 0;
 
-nav li {
-    display: inline-block;
+}
+
+    nav li {
+    /* display: inline-block; */
     font-size: 1.25rem;
-    margin: 0 .3rem;
+    /* margin: 0 .3rem; */
+    list-style-type: none;
+    text-align: center;
+}
+
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 3px 12px;
 }
 
 a {
@@ -28,10 +43,12 @@ a:hover{
 h1 {
     font-size: 3em;
     margin: 1rem;
+    text-align: center;
 }
 
 h2 {
     margin: 1.25rem 1rem .75rem 1rem;
+    text-align: center;
 }
 
 p {
@@ -49,12 +66,51 @@ button {
     color: white;
     font-weight: 700;
     font-size: 1.25rem;
-    margin: 1rem;
+    /* margin: 1rem; */
+    margin: auto;
     border-style: none;
     padding: 20px;
+    display: flex;
+   
     
 }
 
-btn:hover {
+/* btn:hover {
     background-color: aaaaaa;
+} */
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 481px) {
+
+	.main-header,
+    .main-nav {
+		display: flex;
+	}
+	/* .main-header {
+		flex-direction: column;
+		align-items: left;
+	} */
+
+    .main-nav {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 769px) {
+
+	.main-header {
+		/* flex-direction: row; */
+		justify-content: flex-start;
+	}
+
+    .main-nav {
+        justify-content: flex-end;
+
+    }
+
 }
