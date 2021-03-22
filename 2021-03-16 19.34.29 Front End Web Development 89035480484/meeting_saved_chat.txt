@@ -1,0 +1,29 @@
+18:02:14 From Scott Mitchell to Everyone : big mood
+18:03:25 From Jean Borger to Everyone : Family of 10 also! Not that many of us out there anymore.
+18:07:42 From Teresa Hawkins to Everyone : Hello my connection is bad .  I  will try to participate and communicate best I can.
+18:22:10 From Ibrahim Abouzeid to Everyone : foot in the door policy
+18:24:46 From Teresa Hawkins to Everyone : will probably wish everyone  a good night. trying to gain connection by using phone too but not working.
+18:25:24 From Andrei Surzhan to Everyone : we got u, if you are not able to connect post questions in slack and keep workin on project that Is what I would recommend
+18:26:24 From Ibrahim Abouzeid to Everyone : googling too
+18:26:35 From Scott Mitchell to Everyone : I'm just hearing "Learn to use google"
+18:26:48 From Thomas Williams to Everyone : lol
+18:26:57 From Ibrahim Abouzeid to Everyone : how to get unstuck
+18:30:06 From Scott Mitchell to Everyone : Even in Louisville?
+18:32:42 From Jean Borger to Everyone : What is starting salary level?
+18:32:59 From Treble "Alex" burton to Everyone : My job would have been like bring them with you or lock them in a room, but we working 50+ hours this week lmao
+18:33:21 From Alyson Williams to Everyone : ^^lmao, right!
+18:34:44 From Dylan Jackson to Everyone : I think ups starts there devs around 60k
+18:35:51 From Dylan Jackson to Everyone : their*
+18:36:31 From Thomas Williams to Everyone : Define Full Stack?
+18:36:48 From Treble "Alex" burton to Everyone : Front End, Back End, and filling other roles in between
+18:37:20 From Scott Mitchell to Everyone : You do it all
+18:37:21 From Thomas Williams to Everyone : Sql python etc?
+18:37:33 From Jen Breitinger to Everyone : those are some examples yep, there are a lot :)
+18:37:35 From Ibrahim Abouzeid to Everyone : mongo
+18:37:43 From Thomas Williams to Everyone : Cool thanks
+18:38:16 From Thomas Williams to Everyone : That’s a great idea
+18:40:13 From Rachel Zoeller to Everyone : I have blockers this week
+19:15:20 From Jen Breitinger to Jean Borger(Direct Message) : https://www.w3schools.com/cssref/pr_background-image.asp
+19:22:55 From Jen Breitinger to Jean Borger(Direct Message) : Step 1: Create image array or object to show imagesStep 2: On load of the page, loop through image object and use createElement to output each image into a img tag
+19:24:33 From Jen Breitinger to Jean Borger(Direct Message) : Step 3: write a function for onclick of the image, open a modal window or a new page for the user to write a haiku
+19:26:56 From Jen Breitinger to Jean Borger(Direct Message) : Step 4: write a function for onclick of submit button, grab each value from each input and output it to the page in a div with the image above
