@@ -22,10 +22,12 @@
 
 <body>
     <div id="wrapper">
-        <section class="instructions">
+        <div class="instructions instruction1">
             <h4>Step One: Select a nature image below to use as an inspiration for your poem.</h4>
-            <h4></h4>
-        </section>
+        </div>
+
+        <div id="selected-picture-box">
+        </div>
 
         <div id="gallery-box">
                 <img src="img/apple-blossom.jpg">
@@ -39,6 +41,19 @@
                 <img src="img/joe-pye.jpeg">
         </div>
 
-    </div>
+        <section id="input-box">
+            <div class="instructions">
+                <h4>Step Two: Write your poem.</h4>
+                <p>Your first line will be 5 syllables long.</p>
 
-</body>
+            </div>
+            <div>
+                <input id="first-line" type="text">
+            </div>
+            
+        </section>
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>         

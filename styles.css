@@ -31,7 +31,7 @@ a {
     font-weight: 700;
 }
 
-a:hover{
+a:hover {
     color:#808080;
 }
 
@@ -82,6 +82,12 @@ button:hover {
 
 .instructions {
     padding: .25rem;
+}
+
+input {
+    padding: 1rem;
+    margin: auto;
+
 }
 
 /* ================================= 
