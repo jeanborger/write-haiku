@@ -29,6 +29,8 @@
         <div id="selected-picture-box">
         </div>
 
+        <h3 id="poem-display"></h3>
+
         <div id="gallery-box">
                 <img src="img/apple-blossom.jpg">
                 <img src="img/peony-closeup.jpeg">
@@ -47,25 +49,19 @@
                 <p>Write your haiku in the boxes below. When you are satisfied with each of the lines, click "Submit" to see your poem.</p>
 
             </div>
-            <div>
-                <label for="first-line">Your first line should be five syllables long.</label>
-                <input id="first-line" type="text">
-                <!-- <button type="button" id="poem-submit">Submit</button> -->
-            </div>
 
             <div>
-                <label for="second-line">Your second line should be seven syllables long.</label>
-                <input id="second-line" type="text">
-                <!-- <button type="button" id="poem-submit">Submit</button> -->
-            </div>
-
-            <div>
-                <label for="third-line">Your third line should be five syllables long.</label>
-                <input id="third-line" type="text">
+                <label for="poem-input">Write your poem here.</label>
+                <textarea id="poem-input"></textarea>
                 <button type="button" id="poem-submit">Submit</button>
             </div>
+
             
         </section>
+
+        <!-- <div id="image-poem-box">
+            <h1 id="user-poem"></h1>
+        </div> -->
 
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>

@@ -84,15 +84,21 @@ button:hover {
     padding: .25rem;
 }
 
-input {
+input,
+textarea {
     padding: 1rem;
     width: 90%;
     margin: auto;
-    font-size: 20px;
+    font-size: 24px;
     background-color: #e8eeef;
     margin: 12px 16px 16px;
     /* margin-bottom: 30px;
     margin-top: 12px; */
+}
+
+
+#poem-display {
+    white-space: pre-wrap;
 }
 
 label {
