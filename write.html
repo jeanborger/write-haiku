@@ -22,14 +22,14 @@
 
 <body>
     <div id="wrapper">
-        <div class="instructions instruction1">
-            <h3>Step One: Select a nature image below to use as an inspiration for your poem.</h3>
+        <div class="instructions" id="instruction1">
+            <h3>Step One: Select an image below to use as an inspiration for your poem.</h3>
         </div>
 
         <div id="selected-picture-box">
         </div>
 
-        <h3 id="poem-display"></h3>
+        <p id="poem-display"></p>
 
         <div id="gallery-box">
                 <img src="img/apple-blossom.jpg">
@@ -44,14 +44,14 @@
         </div>
 
         <section id="input-box">
-            <div class="instructions">
+            <div class="instructions" id="instruction2">
                 <h3>Step Two: Write your poem.</h3>
-                <p>Write your haiku in the boxes below. When you are satisfied with each of the lines, click "Submit" to see your poem.</p>
+                <p>Write your haiku in the box below. The first line should have 5 syllables, the second 7, and the third 5. When you're satisfied with each line, click "Submit" to see your poem.</p>
 
             </div>
 
             <div>
-                <label for="poem-input">Write your poem here.</label>
+                <!-- <label for="poem-input">Write your poem here.</label> -->
                 <textarea id="poem-input"></textarea>
                 <button type="button" id="poem-submit">Submit</button>
             </div>

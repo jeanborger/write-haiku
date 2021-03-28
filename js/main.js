@@ -3,18 +3,19 @@
 $().ready(function(){
     $("#selected-picture-box").hide();
     $("#input-box").hide();
+    $("#poem-display").hide();
 
     $("img").click(function() {
         $("#gallery-box").css("display","none");
-        $(".instruction1").css("display","none");
+        $("#instruction1").css("display","none");
         imgName = $(this).attr("src");
         var img = document.createElement("img");
         img.style.width = "100%";
+        img.setAttribute("class", "main-image");
         img.setAttribute("src", imgName);
         $("#selected-picture-box").append(img);
         $("#selected-picture-box").show();
         $("#input-box").show();
-
     })
 })
 
