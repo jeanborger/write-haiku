@@ -26,23 +26,13 @@ var submitButton = document.getElementsByTagName("button")[0]; //button
 var poemToDisplay; //first line to display to page
 
 submitButton.onclick = function() {
+    if (poemInput.value == 0) {
+        document.getElementById("poem-display").innerHTML = "You did not enter a poem. Please write your poem below.";
+        $("#poem-display").show();
+    } else {
     $("#input-box").hide();
     poemToDisplay = poemInput.value;
-    console.log(poemToDisplay);
+    // console.log(poemToDisplay);
     document.getElementById("poem-display").innerHTML = poemToDisplay;
-}
-
-// $().ready(function(){
-//     $("#selected-picture-box").hide();
-//     $("#input-box").hide();
-
-//     $("img").click(function() {
-//         $("#gallery-box").css("display","none");
-//         $(".instruction1").css("display","none");
-//         imgName = $(this).attr("src");
-//         var img = document.createElement("img");
-//         img.style.width = "100%";
-//         img.setAttribute("src", imgName);
-//         $("#selected-picture-box").append(img);
-//         $("#selected-picture-box").show();
-//         $("#input-box").show();
+    $("#poem-display").show();}
+    }
