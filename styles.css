@@ -51,7 +51,7 @@ h2 {
 }
 
 h3 {
-    margin: 0 1em 1em;
+    margin: 0.5rem 1em .5em;
     text-align: center;
 }
 
@@ -83,10 +83,15 @@ button:hover {
 .instructions {
     padding: .25rem;
     margin-top: 1rem;
+    font-style: italic;
 }
 
 #instruction1 {
     margin-bottom: 0px;
+}
+
+#sub-instruction1 {
+    text-align: center;
 }
 
 textarea {
@@ -128,6 +133,12 @@ label {
     .main-nav {
         justify-content: space-around;
     }
+
+
+    h2, h3, #sub-instruction1 {
+        text-align: left;
+    }
+
    
     /* #gallery-box {
         display: flex;
@@ -159,10 +170,6 @@ label {
 
     .main-nav {
         justify-content: flex-end;
-    }
-
-    h2, h3 {
-        text-align: left;
     }
 
 }
