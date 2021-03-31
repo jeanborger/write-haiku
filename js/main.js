@@ -1,3 +1,52 @@
+var imageObject = [{
+    src: "img/apple-blossom.jpg",
+    alt: "Apple blossoms in bloom in the morning sun"
+},
+{
+    src: "img/peony-closeup.jpeg",
+    alt: "Large white peony with shadows in the background"
+},
+{
+    src: "img/teasel-sky.jpeg",
+    alt: "Tops of dried teasel plants standing against a blue sky"
+},
+{
+    src: "img/dried-flower-snow.jpeg",
+    alt: "Dried flowers standing against a background of sparkling snow"
+},
+{    
+    src: "img/fern.jpeg",
+    alt: "Sensitive fern closeup in the golden morning sun"
+},
+{
+    src: "img/bird-tree.jpeg",
+    alt: "Bird in a tree silhouetted against a purple-brown sky"
+},
+{
+    src: "img/dandelion.jpeg",
+    alt: "Dandelion seed globes silhouetted against black in the golden morning light"
+},
+{
+    src: "img/sunflower.jpeg",
+    alt: "Large sunflower turned downward in front of a blue sky"
+},
+{
+    src: "img/joe-pye.jpeg",
+    alt: "Queen Anne's Lace and Joe Pye Weed growing in garden with a background of soft green"
+}
+];
+
+function createListItems (arr) {
+    var items = "";
+    for (let i = 0; i < arr.length; i++) {
+        items += `<img src="${arr[i].src}" alt="${arr[i].alt}">`
+    }
+    document.getElementById("gallery-box").innerHTML = items;
+
+}
+
+createListItems(imageObject);
+
 // Write function for onclick of an image, hide gallery and Step One, get src of clicked image and show image, show Step 2 and input field for first line
 
 $().ready(function(){
@@ -19,7 +68,7 @@ $().ready(function(){
     })
 })
 
-// Write function for onclick of submit button, grab value from input and output it to the page in a div with the main image above.
+// Write function for onclick of submit button, grab value from input and output it to the page under the main image. If no poem is entered, return message to write poem.
 
 var poemInput = document.getElementById("poem-input"); //first line entered by user
 var submitButton = document.getElementsByTagName("button")[0]; //button
@@ -32,7 +81,6 @@ submitButton.onclick = function() {
     } else {
     $("#input-box").hide();
     poemToDisplay = poemInput.value;
-    // console.log(poemToDisplay);
     document.getElementById("poem-display").innerHTML = poemToDisplay;
     $("#poem-display").show();}
     }

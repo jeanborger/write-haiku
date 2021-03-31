@@ -74,10 +74,15 @@ button {
     font-size: 1.25rem;   
     border-style: none;
     padding: 20px;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: #808080;
+}
+
+.empty {
+    padding: 1rem;
 }
 
 .instructions {
@@ -114,10 +119,15 @@ textarea {
     font-size: 1.5rem;
 }
 
-label {
-    margin: 0px 16px 16px;
-    font-size: 16px;
+#about-info {
+    padding: .25rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    max-width: 800px;
 }
+
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -139,7 +149,6 @@ label {
         text-align: left;
     }
 
-   
     /* #gallery-box {
         display: flex;
         flex-wrap: wrap;
