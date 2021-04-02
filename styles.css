@@ -167,6 +167,6 @@ textarea {
 @media (orientation: landscape) {
     .main-image {
         object-fit: cover;
-        height: 85vh;
+        height: 90vh;
     }
 }
