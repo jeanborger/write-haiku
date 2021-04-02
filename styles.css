@@ -161,7 +161,17 @@ textarea {
     .main-nav {
         justify-content: flex-end;
     }
+}
 
+@media (min-width: 1201px) {
+
+	#poem-display {
+		font-size: 2rem;
+	}
+
+    h1 {
+        font-size: 4rem;
+    }
 }
 
 @media (orientation: landscape) {
