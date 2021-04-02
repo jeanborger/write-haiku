@@ -1,4 +1,7 @@
-var imageObject = [{
+// Create an array of objects containing src and alt info for a gallery of images for user to choose from in writing their poem, and output the images to the page in a gallery box.
+
+var imageObject = [
+{
     src: "img/apple-blossom.jpg",
     alt: "Apple blossoms in bloom in the morning sun"
 },
@@ -28,7 +31,7 @@ var imageObject = [{
 },
 {
     src: "img/sunflower.jpeg",
-    alt: "Large sunflower turned downward in front of a blue sky"
+    alt: "Large yellow sunflower turned downward in profile in front of a bright blue sky"
 },
 {
     src: "img/joe-pye.jpeg",
@@ -42,24 +45,22 @@ function createListItems (arr) {
         items += `<img src="${arr[i].src}" alt="${arr[i].alt}">`
     }
     document.getElementById("gallery-box").innerHTML = items;
-
 }
-
 createListItems(imageObject);
 
-// Write function for onclick of an image, hide gallery and Step One, get src of clicked image and show image, show Step 2 and input field for first line
+// Write function for onclick of an image, hide gallery and Step One, get src of clicked image and show image, show Step 2 and text area
 
 $().ready(function(){
     $("#selected-picture-box").hide();
     $("#input-box").hide();
     $("#poem-display").hide();
 
-    $("img").click(function() {
+    $("img").click(function(){
         $("#gallery-box").css("display","none");
         $("#instruction1").css("display","none");
         imgName = $(this).attr("src");
         var img = document.createElement("img");
-        img.style.width = "100%";
+        // img.style.width = "100%";
         img.setAttribute("class", "main-image");
         img.setAttribute("src", imgName);
         $("#selected-picture-box").append(img);
@@ -68,15 +69,15 @@ $().ready(function(){
     })
 })
 
-// Write function for onclick of submit button, grab value from input and output it to the page under the main image. If no poem is entered, return message to write poem.
+// Write function for onclick of submit button, grab value from input and output it to the page under the main image. If no poem is entered, return message to write poem in the box below.
 
-var poemInput = document.getElementById("poem-input"); //first line entered by user
+var poemInput = document.getElementById("poem-input"); //poem entered by user
 var submitButton = document.getElementsByTagName("button")[0]; //button
-var poemToDisplay; //first line to display to page
+var poemToDisplay; //poem to display to page
 
 submitButton.onclick = function() {
     if (poemInput.value == 0) {
-        document.getElementById("poem-display").innerHTML = "You did not enter a poem. Please write your poem below.";
+        document.getElementById("poem-display").innerHTML = "You did not enter a poem. Please write your poem in the box below and then click the button underneath it to see your poem.";
         $("#poem-display").show();
     } else {
     $("#input-box").hide();

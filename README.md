@@ -12,3 +12,4 @@ Features included:
 1) Creating a responsive menu using Flexbox. 
 2) Showing and hiding content areas using JavaScript and JQuery on the "write a haiku" page.
 3) Creating a form where the user enters a poem, checking whether the user has entered something, and then displaying the poem back to the user (or a message that nothing was entered).
+4) Creating an array of objects to store and display image gallery to the page.

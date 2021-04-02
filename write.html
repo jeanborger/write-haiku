@@ -8,7 +8,6 @@
     <link href="styles.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans:400italic,600italic,700italic,400,600,700,800" rel="stylesheet" type="text/css">
 </head>
-
 <header>
     <h1 class="main-header">haiku</h1>
     <nav>
@@ -19,7 +18,6 @@
         </ul>
     </nav>
 </header
-
 <body>
     <div id="wrapper">
         <div class="instructions" id="instruction1">
@@ -47,14 +45,14 @@
         <section id="input-box">
             <div class="instructions" id="instruction2">
                 <h3>Step Two: Write your poem.</h3>
-                <p>Write your haiku in the box below. The first line should have 5 syllables, the second 7, and the third 5. When you're satisfied with what you've written, click "Submit" to see your poem.</p>
-
+                <p>Write your haiku in the box below. The first line should have 5 syllables, the second 7, and the third 5. When you're satisfied, click the button below to see your poem.</p>
+                <div>
+                    <textarea id="poem-input"></textarea>
+                    <button type="button" id="poem-submit">Submit poem</button>
+                </div>
             </div>
 
-            <div>
-                <textarea id="poem-input"></textarea>
-                <button type="button" id="poem-submit">Submit</button>
-            </div>
+          
             <div class="empty"></div>
         </section>
     </div>
