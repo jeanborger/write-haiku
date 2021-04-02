@@ -12,9 +12,7 @@ nav ul {
 }
 
 nav li {
-    /* display: inline-block; */
     font-size: 1.25rem;
-    /* margin: 0 .3rem; */
     list-style-type: none;
     text-align: center;
 }
@@ -58,11 +56,9 @@ h3 {
 p {
     margin: 0 1rem 1.5rem 1rem;  
     font-size: 1.1em;
-      
 }
 img {
     width: 100%;
-    /* margin-bottom: 1rem; */
 }
 
 button {
@@ -98,6 +94,7 @@ button:hover {
 
 #sub-instruction1 {
     text-align: center;
+    margin-bottom: 1.25rem;
 }
 
 textarea {
@@ -132,7 +129,6 @@ textarea {
   Media Queries
 ==================================== */
 
-
 @media (min-width: 481px) {
 
 	.main-header,
@@ -145,29 +141,15 @@ textarea {
     }
 
 
-    h2, h3, #sub-instruction1 {
+    h2, h3, #sub-instruction1, #poem-display {
         text-align: left;
     }
-
-    /* #gallery-box {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-    } */
 
     #gallery-box img {
         float: left; 
         width: 33.33%;
         margin: 0;
     }
-
-    #poem-display {
-        text-align: left;
-        /* font-size: 1.5rem; */
-        /* margin-top: 1rem;
-        margin-bottom: 3rem; */
-    }
-
 }
 
 @media (min-width: 769px) {
@@ -186,6 +168,5 @@ textarea {
     .main-image {
         object-fit: cover;
         height: 85vh;
-        /* overflow: hidden; */
     }
 }

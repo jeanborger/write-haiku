@@ -1,4 +1,4 @@
-// Create an array of objects containing src and alt info for a gallery of images for user to choose from in writing their poem, and output the images to the page in a gallery box.
+// Create an array of objects containing src and alt info for a gallery of images for user to choose from in writing their poem. Output the images to the page in a gallery box.
 
 var imageObject = [
 {
@@ -54,13 +54,11 @@ $().ready(function(){
     $("#selected-picture-box").hide();
     $("#input-box").hide();
     $("#poem-display").hide();
-
     $("img").click(function(){
         $("#gallery-box").css("display","none");
         $("#instruction1").css("display","none");
         imgName = $(this).attr("src");
         var img = document.createElement("img");
-        // img.style.width = "100%";
         img.setAttribute("class", "main-image");
         img.setAttribute("src", imgName);
         $("#selected-picture-box").append(img);
